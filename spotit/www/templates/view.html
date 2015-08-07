@@ -1,0 +1,18 @@
+<ion-view view-title="View Tickets">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="ticket in tickets">
+        <div class="card">
+          <div class="item item-divider">
+            {{ticket.urgency}}
+          </div>
+          <div class="item item-text-wrap">
+            {{ticket.firstName}} {{ticket.lastName}}<br/>
+            {{ticket.createdDate}}<br/>
+            {{ticket.notes}}
+          </div>
+        </div> 
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

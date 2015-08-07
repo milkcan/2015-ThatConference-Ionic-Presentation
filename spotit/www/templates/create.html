@@ -1,0 +1,34 @@
+<ion-view view-title="Create Tickets">
+  <ion-content>
+    <div class="list list-inset">
+      <label class="item item-input item-select">
+        <div class="input-label">
+          Urgency
+        </div>
+        <select ng-model="ticket.urgency">
+          <option>Low</option>
+          <option>Medium</option>
+          <option>Immediate</option>
+        </select>
+      </label>
+      <label class="item item-input">
+        <input type="text" ng-model="ticket.firstName" placeholder="First Name">
+      </label>
+      <label class="item item-input">
+        <input type="text" ng-model="ticket.lastName" placeholder="Last Name">
+      </label>
+      <label class="item item-input">
+        <textarea name="location" ng-model="ticket.location" rows="5" placeholder="Location"></textarea>
+      </label>
+      <label class="item item-input">
+        <input type="text" ng-model="ticket.phoneNumber" placeholder="Phone Number">
+      </label>
+      <label class="item item-input">
+        <textarea name="notes" ng-model="ticket.notes" rows="5" placeholder="Notes"></textarea>
+      </label>
+      <button class="button button-block button-calm" ng-click="create()">
+        Submit
+      </button>
+    </div>
+  </ion-content>
+</ion-view>
