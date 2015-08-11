@@ -1,6 +1,6 @@
 {
   "name": "SpotIt",
-  "app_id": "",
+  "app_id": "9eae690e",
   "gulpStartupTasks": [
     "sass",
     "watch"
